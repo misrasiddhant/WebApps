@@ -1,0 +1,149 @@
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<style>
+.healthy {
+    background: lightblue;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+	position:fixed;
+}
+
+.infected {
+    background: red;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+	position:fixed;
+}
+</style>
+
+<script>
+	$(document).ready(function(){
+	
+		setDiv();
+		animateDiv();
+	});
+
+function makeNewPosition(){
+    
+    // Get viewport dimensions (remove the dimension of the div)
+    var h = $(window).height() - 50;
+    var w = $(window).width() - 50;
+    
+    var nh = Math.floor(Math.random() * h);
+    var nw = Math.floor(Math.random() * w);
+    
+    return [nh,nw];    
+    
+}
+
+function distance(elem1, elem2){
+
+	console.log(elem1.top)
+	var x1 = elem1.top
+	var x2 = elem2.top
+	
+	var y1 = elem1.left
+	var y2 = elem2.left
+	
+	var dist = Math.sqrt(Math.abs(x2-x1)/Math.abs(y2-y1))
+	
+	//document.getElementById("text").innerHTML = dist
+	return dist
+}
+
+function setDiv(){
+
+var p = document.getElementsByName("patient")
+	
+	for(var i=0; i<p.length;i++){
+    var newq = makeNewPosition();
+      $(p[i]).css({top: newq[0], left: newq[1]});
+	}
+
+	
+}
+
+function distance(x1,x2,y1,y2){
+	
+	var dist = Math.sqrt(Math.abs(x2-x1)+Math.abs(y2-y1))
+	return dist
+}
+
+function animateDiv(){
+
+    var p = document.getElementsByName("patient")
+	
+	for(var i=0; i<p.length;i++){
+    var newq = makeNewPosition();
+      $(p[i]).animate({ top: newq[0], left: newq[1] }, 8000, function(){
+        animateDiv();        
+      });
+	}
+    
+	for(var i=0; i<p.length;i++){
+	
+		for(var j=i+1; j<p.length;j++){
+			var x = $(p[i]).position()
+			var y = $(p[j]).position()
+			//var dist = distance(,)
+			var dist = distance(x.top,y.top,x.left,y.left)
+			console.log($(p[i]).attr('id') + "  -  "+$(p[j]).attr('id') + " -> " + dist)
+			if(dist < 10){
+				if(p[i].className == "infected" || p[j].className == "infected" ){
+					console.log(p[j].id + "infected")
+					p[i].className = "infected"
+					p[j].className = "infected"
+				}
+			}
+		}
+	}
+	
+	document.getElementById("text").innerHTML = "Infected " + $('.infected').length
+	
+};
+
+
+</script>
+
+<body>
+
+<div id="patient0" name="patient" class="infected"></div>
+<div id="patient1" name="patient" class="healthy"></div>
+<div id="patient2" name="patient" class="healthy"></div>
+<div id="patient3" name="patient" class="healthy"></div>
+<div id="patient4" name="patient" class="healthy"></div>
+<div id="patient5" name="patient" class="healthy"></div>
+<div id="patient6" name="patient" class="healthy"></div>
+<div id="patient7" name="patient" class="healthy"></div>
+<div id="patient8" name="patient" class="healthy"></div>
+<div id="patient9" name="patient" class="healthy"></div>
+<div id="patient10" name="patient" class="healthy"></div>
+<div id="patient11" name="patient" class="healthy"></div>
+<div id="patient12" name="patient" class="healthy"></div>
+<div id="patient13" name="patient" class="healthy"></div>
+<div id="patient14" name="patient" class="healthy"></div>
+<div id="patient15" name="patient" class="healthy"></div>
+<div id="patient16" name="patient" class="healthy"></div>
+<div id="patient17" name="patient" class="healthy"></div>
+<div id="patient18" name="patient" class="healthy"></div>
+<div id="patient19" name="patient" class="healthy"></div>
+<div id="patient20" name="patient" class="healthy"></div>
+<div id="patient21" name="patient" class="healthy"></div>
+<div id="patient22" name="patient" class="healthy"></div>
+<div id="patient23" name="patient" class="healthy"></div>
+<div id="patient30" name="patient" class="healthy"></div>
+<div id="patient31" name="patient" class="healthy"></div>
+<div id="patient32" name="patient" class="healthy"></div>
+<div id="patient33" name="patient" class="healthy"></div>
+<div id="patient34" name="patient" class="healthy"></div>
+<div id="patient35" name="patient" class="healthy"></div>
+<div id="patient36" name="patient" class="healthy"></div>
+<div id="patient37" name="patient" class="healthy"></div>
+<div id="patient38" name="patient" class="healthy"></div>
+<div id="patient39" name="patient" class="healthy"></div>
+<div id="patient40" name="patient" class="healthy"></div>
+<a id="text" href="#"></a>
+</body>
+<html>
