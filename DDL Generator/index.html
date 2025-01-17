@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+    <script type="text/javascript" src="scripts/index.js"></script>
+    <meta charset="ISO-8859-1">
+    <title>Insert title here</title>
+</head>
+
+<body>
+<!--
+<input type="file" id="load_sample_file" hidden="true"></input>
+<input type="file" id="load_schema_file" hidden="true"></input>
+<label for="load_schema_file" class="RedButton"> Select Schema File</label>
+<br><br>
+<label for="load_schema_file" class="RedButton"> Select Data File</label>
+-->
+
+    <br />
+    <input type="text" id="header_data" style="width: 70%;" placeholder="Header" />
+    <br /><br />
+    <input type="text" id="sample_data" onblur="determineDelimiter(this)" style="width: 70%;"
+           placeholder="Sample Data (Single Row)" />
+    <label class="InputHeader" for="seperator">Separator</label><input type="text" id="seperator" class="headerExtn"
+                                                                       style="width: 15px;" />
+    <button class="RedButton" onclick="InferSchema()"> Generate Schema</button>
+    <br>
+
+    <br>
+
+    <label class="InputHeader" for="schema_name">Schema</label><input type="text" id="schema_name" class="headerExtn" />
+    <label class="InputHeader">Table</label><input type="text" id="table_name" class="headerExtn" /><br>
+
+
+    <h4><span onclick="toggle('schema')">Schema Definition </span></h4>
+    <span id="schema"></span>
+
+    <br>
+    <h4>Table Properties</h4>
+    <span id="table_prop">
+
+            <label>
+                <input type="radio" name="table_type" value="managed" />
+            </label>Managed Table
+
+            <label>
+                <input type="radio" name="table_type" value="ext">
+            </label>External Table
+            <br>
+            <br>
+            <label class="InputHeader" for="storage_format">Storage Format</label>
+            <select class="headerExtn" id="storage_format">
+                <option>SEQUENCEFILE</option>
+                <option>TEXTFILE</option>
+                <option>RCFILE</option>
+                <option>ORC</option>
+                <option>PARQUET</option>
+                <option>AVRO</option>
+                <option>JSONFILE</option>
+            </select>
+        </span>
+    <br>
+    <br>
+
+    <h4><span onclick="toggle('row_format')">Schema Definition </span></h4>
+    <span id="row_format">
+        <label class="InputHeader" for="schema-comment">comment</label><input type="text" id="schema-comment" class="headerExtn"/><br/><br/>
+        <label class="InputHeader" for="hbase-table-name">hbase.table.name</label><input type="text" id="hbase-table-name" class="headerExtn"/><br/><br/>
+        <label><input type="checkbox"/>immutable</label><br/><br/>
+        <label><input type="checkbox">transactional </label><br/><br/>
+        <label><input type="checkbox">NO_AUTO_COMPACTION </label><br/><br/>
+        <label><input type="checkbox">auto.purge </label><br/><br/>
+    </span>
+
+    <!-- Properties for ORC Files-->
+
+    <span id="orc" class="tbl_properties">
+            <br>
+        <h4>ORC Properties</h4><br>
+            <label for="orc_compression" class="InputHeader OrcHeader">orc.compress</label>
+            <select id="orc_compression" class='headerExtn'>
+                <option>NONE</option>
+                <option>SNAPPY</option>
+                <option>ZLIB</option>
+            </select><br/><br/>
+            <label class="InputHeader OrcHeader">orc.compress.size</label>
+            <input type='text' id='orc.compress.size' class='headerExtn OrcInput'><br/><br/>
+            <label class="InputHeader OrcHeader">orc.stripe.size</label> <input type='text' id='orc.stripe.size' class='headerExtn OrcInput'/><br/><br/>
+            <label class="InputHeader OrcHeader">orc.row.index.stride</label> <input type='text' id='orc.row.index.stride' class='headerExtn OrcInput'/><br/><br/>
+            <label class="InputHeader OrcHeader">orc.create.index</label> <input type='text' id='orc.create.index' class='headerExtn OrcInput'/><br/><br/>
+            <label class="InputHeader OrcHeader">orc.bloom.filter.columns</label> <input type='text' id='orc.bloom.filter.columns' class='headerExtn OrcInput'/><br/><br/>
+            <label class="InputHeader OrcHeader">orc.bloom.filter.fpp</label> <input type='text' id='orc.bloom.filter.fpp' class='headerExtn OrcInput'/><br/><br/>
+
+        </span>
+    <br>
+    <br>
+
+
+    <label>Field Separator </label><input type="text" id="field_separator" class="input_underline"
+                                          style="width: 30px;"/><br>
+    <label>Escape Character </label><input type="text" id="escape_char" class="input_underline"
+                                           style="width: 30px;"/><br>
+    <label>Collection Item Separator </label><input type="text" id="collection_item_separator" class="input_underline"
+                                                    style="width: 30px;"/><br>
+    <label>Map Keys Separator </label><input type="text" id="map_keys_separator" class="input_underline"
+                                             style="width: 30px;"/><br>
+    <label>Line Separator </label><input type="text" id="line_separator" class="input_underline"
+                                         style="width: 30px;"/><br>
+    <label>NULLs Defined As </label><input type="text" id="null" class="input_underline"
+                                           style="width: 30px;"/><br>
+
+    <br>
+    <h4>Serde Properties</h4>
+    <span id="serde_prop"></span>
+</body>
+
+</html>
