@@ -1,0 +1,62 @@
+openapi: 3.1.1
+info:
+  title: Countdown Game API
+  version: '1.0.0'
+  description: |
+    API to generate random characters and numbers for the game.
+
+    * Request for a vowel  or consonant 🔠
+    * Request for a big number or small number 🔢
+tags:
+  - name: letters
+  - name: numbers
+paths:
+  /:
+    get:
+      summary: Application health
+      responses:
+        200:
+          description: healthy
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Response'
+              example:
+                message: healthy
+  /vowel:
+    get:
+      tags:
+        - letters
+      summary: Vowel
+      responses:
+        200:
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Response'
+              example:
+                message: A
+  /consonant:
+    get:
+      tags:
+        - letters
+      summary: Consonant
+      responses:
+        200:
+          description: success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Response'
+              example:
+                message: B
+
+
+components:
+  schemas:
+    Response:
+      type: object
+      properties:
+        message:
+          type: string
