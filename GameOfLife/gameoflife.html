@@ -1,0 +1,105 @@
+<head>
+
+<style>
+.container {
+  display: grid;
+  grid-template-columns: 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px 15px;
+  background-color: #000;
+  padding: 10px;
+}
+.grid-item-alive {
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 0px;
+  font-size: 3px;
+  text-align: center;
+  height:15px;
+}
+
+.grid-item-dead {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 0px;
+  font-size: 3px;
+  text-align: center;
+  height:15px;
+}
+
+</style>
+
+<script>
+	var max=48;
+	function generateGrid(){
+		var container = document.getElementById("container");
+		
+		for(i=0; i<max;i++){
+			for(j=0; j<max;j++){
+				var cellitem = document.createElement("div");
+				cellitem.className = "grid-item-dead";
+				cellitem.id=i+'_'+j;
+				container.appendChild(cellitem)
+			}
+		}
+	}
+	
+	document.addEventListener('click',function(e){
+		//alert("click" + e.target.className);
+		if(e.target.className== 'grid-item-dead'){e.target.className= 'grid-item-alive'}
+		else if(e.target.className== 'grid-item-alive'){e.target.className= 'grid-item-dead'}
+	})
+	
+	function countAdjacent(i,j){
+		var i_min = (i-1>=0) ? i-1 : i;
+		var i_max = (i+1<max-1) ? i+1 : i;
+		
+		var j_min = (j-1>=0) ? j-1 : j;
+	    var j_max = (j+1<max-1) ? j+1 : j;
+		
+		//alert("reading "+i_min+''+j_min+''+i_max+''+j_max)
+		
+		var alivecount=0;
+		for(x=i_min;x<=i_max;x++){
+			for(y=j_min;y<=j_max;y++){
+				if(!(x==i && y==j) && document.getElementById(x+'_'+y).className== 'grid-item-alive'){
+					alivecount++;
+				}
+			}	
+		}
+		return alivecount;
+	}
+	
+	
+	function play(){
+		for(i=0; i<max;i++){
+			for(j=0; j<max;j++){
+				var elem = document.getElementById(i+'_'+j);
+				var countNeighbour=countAdjacent(i,j);
+				elem.innerHTML=countNeighbour;
+				
+				if(countNeighbour==3 && elem.className=='grid-item-dead'){
+					elem.className='grid-item-alive';
+				}else if((countNeighbour<2 || countNeighbour>3)  && elem.className=='grid-item-alive') {
+					elem.className='grid-item-dead';
+				}
+				
+			}
+		}
+	}
+	
+	function animatePlay(){
+		//alert("yo")
+		//for(i=1;i<30;i++){
+			setInterval(play, 500);
+		//}
+	
+	}
+</script>
+</head>
+
+
+<body onload="generateGrid()">
+<div id="container" class="container"></div>
+
+<div onclick="animatePlay()">Play</div>
+
+</body>

@@ -1,0 +1,15 @@
+.healthy {
+    background: lightblue;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position:fixed;
+}
+
+.infected {
+    background: red;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position:fixed;
+}
