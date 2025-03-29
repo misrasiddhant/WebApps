@@ -68,9 +68,23 @@ exports.getMapsForWord = function(input){
 
     for (let i = 0; i < wordMapKeys.length; i++) {
         let words = word_map.get(wordMapKeys[i]);
+        words = words.flatMap(
+            _word=> {
+                let inputAsArray = input.split("");
+                for (let j = 0; j < _word.length; j++) {
+                    let c = _word[j];
+                    let index = inputAsArray.indexOf(c);
+                    if (index !== -1) {
+                        inputAsArray.splice(index, 1);
+                    } else {
+                        return [];
+                    }
+                }
+                return _word;
+            }
+        )
         for (let j = 0; j < words.length; j++) {
             let word = words[j];
-            // ToDo: Fix the logic
             if (word.length > theLongestWord.length){
                 theLongestWord = word;
             }
