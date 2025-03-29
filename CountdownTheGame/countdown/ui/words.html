@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Word Game</title>
+    <script src="scripts/common.js"></script>
+    <script src="scripts/word.js"></script>
+    <link rel="stylesheet" href="styles/word.css">
+</head>
+<body>
+<div id="container">
+    <div id="word-selection-panel" class="single-row-grid full-window">
+      <script>generateLetterPanel("word-selection-panel",9)</script>
+    </div>
+    <div id="button_panel" class="single-row-grid half-window">
+        <button onclick="generateVowel()">Vowel</button>
+        <button onclick="generateConsonant()">Consonant</button>
+    </div>
+    <div id="word-solution-panel" class="single-row-grid full-window">
+        <script>generateLetterPanel("word-solution-panel",9)</script>
+    </div>
+
+    <div id="solution-button-panel" class="single-row-grid half-window">
+        <button onclick="solve('word-selection-panel', 'word-solution-panel')">Solve</button>
+        <button onclick="wordReset()">Reset</button>
+    </div>
+</div>
+</body>
+</html>
