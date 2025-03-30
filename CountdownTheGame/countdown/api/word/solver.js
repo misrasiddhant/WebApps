@@ -40,6 +40,24 @@ function loadWords() {
 
 loadWords()
 
+exports.getCharacterFrequency = function(){
+    console.log('getCharacterFrequency');
+    let characterWordCountMap = new Map();
+    let max= 0;
+    character_key_map.entries().forEach((entry) => {
+        let count = entry.length;
+        characterWordCountMap.set(entry[0], count);
+        max = max > count ? max : count;
+    })
+    console.log(characterWordCountMap);
+    characterWordCountMap.entries().forEach((entry) => {
+        let ratio = Math.ceil((entry[1] / max) * 10);
+        characterWordCountMap.set(entry[0], ratio);
+    })
+    console.log(characterWordCountMap);
+    return characterWordCountMap;
+};
+
 exports.getMapsForWord = function(input){
 
     console.log(input);

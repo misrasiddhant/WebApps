@@ -1,7 +1,6 @@
 const wordHandler = require("./word/helper");
-const wordSolver = require("./word/solver");
 const {getMapsForWord} = require("./word/solver");
-
+const numberHandler = require("./number/helper");
 function okResponse(response, message){
     response.writeHead(200, {'Content-Type': 'application/json'});
     let data ={
@@ -29,6 +28,16 @@ exports.handleConsonant = (res) => {
     okResponse(res, c);
 }
 
+exports.getRandomSmallNumber = (res)=>{
+    let n = numberHandler.getSmallNumber();
+    okResponse(res, n);
+}
+
+exports.getRandomLargeNumber = (res)=>{
+    let n = numberHandler.getLargeNumber();
+    okResponse(res, n);
+}
+
 exports.solve = (req, res) => {
 
     let word = req.query.word;
@@ -39,13 +48,19 @@ exports.solve = (req, res) => {
 
     let number = req.query.number;
     if (number) {
-        return okResponse(res, "24");
+        let numberList = number.split(',').flatMap(x => Number(x));
+
+        return okResponse(res, numberHandler.generateExpression(numberList));
     }
 
-    return badRequest(res, "word or numbers parameter missing");;
+    return badRequest(res, "word or numbers parameter missing");
 
 }
 
 exports.handleRoot = function (res) {
     okResponse(res, "healthy");
+}
+
+exports.handleBadRequest = (res, message) => {
+    badRequest(res, message);
 }

@@ -20,11 +20,11 @@
     border: 1px solid #01579B;
     font-family: sans-serif;
     font-size: 9vw;
-    width: 10vw;
+    width: 20vw;
     height: 10vw;
     text-align: center;
     align-content: center;
-    margin: 0.5vw;
+    margin: auto;
 }
 
 button {

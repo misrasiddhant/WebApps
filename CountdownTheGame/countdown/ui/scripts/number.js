@@ -14,20 +14,9 @@ async function getData(path) {
     }
 }
 
-async function generateLetter(type){
-    if(counter>9){return;}
-    document.getElementById("panel_item_" + counter).textContent = await getData("/letter?type=" + type);
-    counter = counter + 1;
-}
-async function generateVowel() {
-
-    document.getElementById("panel_item_" + counter).textContent = await getData("/vowel");
-    counter = counter + 1;
-}
-
-async function generateConsonant() {
-
-    document.getElementById("panel_item_" + counter).textContent = await getData("/consonant");
+async function getNumber(type)
+{   if(counter > 5){return;}
+    document.getElementById("number-selection-panel_panel_item_" + counter).textContent = await getData("/number?type="+type);
     counter = counter + 1;
 }
 
@@ -38,18 +27,14 @@ async function solve(inputPanel, outputPanel) {
         letters.push(inputTextBoxes[j].textContent);
     }
     console.log(letters);
-    let solution = await getData("/solve?word=" + letters.join(""));
+    let solution = await getData("/solve?number=" + letters.join(","));
     console.log(solution);
-    solution = solution.split("");
 
-    let outputTextBoxes = document.getElementById(outputPanel).children
-
-    for (let j = 0; j < solution.length && j < outputTextBoxes.length -1; j++) {
-        outputTextBoxes[j + 1].textContent = solution[j];
-    }
+    let outputTextBox = document.getElementById(outputPanel).children[1]
+    outputTextBox.textContent = solution[solution.length-1];
 }
 
-function wordReset() {
+function numberReset() {
     let items = document.getElementsByClassName("letter");
     for (let i = 0; i < items.length; i++) {
         items[i].textContent = "";
