@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Number Game</title>
+    <script src="scripts/common.js"></script>
+    <script src="scripts/number.js"></script>
+    <link rel="stylesheet" href="styles/number.css">
+</head>
+<body>
+<div id="container">
+    <div id="number-solution-panel" class="single-row-grid half-window">
+        <script>generateNumberPanel("number-solution-panel",1)</script>
+    </div>
+    <div id="number-selection-panel" class="single-row-grid full-window">
+        <script>generateNumberPanel("number-selection-panel",5)</script>
+    </div>
+    <div id="button_panel" class="single-row-grid half-window">
+        <button onclick="getNumber('small')">Small</button>
+        <button onclick="getNumber('large')">Large</button>
+    </div>
+
+    <div id="solution-button-panel" class="single-row-grid half-window">
+        <button onclick="solve('number-selection-panel', 'number-solution-panel')">Solve</button>
+        <button onclick="numberReset()">Reset</button>
+    </div>
+
+</div>>
+</body>
+</html>
