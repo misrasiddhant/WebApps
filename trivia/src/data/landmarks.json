@@ -1,0 +1,148 @@
+{
+    "id": "landmarks",
+    "displayName": "Landmarks",
+    "eyebrow": "Explore the world",
+    "description": "Discover famous landmarks, historic sites, and cultural wonders from around the globe.",
+    "mainImage": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=85",
+    "pageImage": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1800&q=90",
+    "theme": {
+      "primary": "#087f8c",
+      "secondary": "#d9f1ed",
+      "accent": "#f2a65a",
+      "ink": "#12323a"
+    },
+  "questions": [
+    {
+      "prompt": "Which city is home to this Tower?",
+      "mediaURL": "/data/resources/game/landmarks/0e8c0c28-eiffel-tower_vegas-lights-at-night.jpg",
+      "options": [
+        "Las Vegas",
+        "Paris",
+        "Monaco",
+        "Brussels"
+      ],
+      "correctAnswer": 0,
+      "fact": "The Eiffel Tower shown here is a half-scale replica at the Paris Las Vegas Hotel and Casino."
+    },
+    {
+      "prompt": "In which city can you find this skyscraper?",
+      "mediaURL": "/data/resources/game/landmarks/the-shard-is-in-the-iconic-buildings-london-has-to-offer.jpg",
+      "options": [
+        "New York City",
+        "London",
+        "Dublin",
+        "Vancouver"
+      ],
+      "correctAnswer": 1,
+      "fact": "The Shard is a distinctive glass skyscraper near London Bridge in central London."
+    },
+    {
+      "prompt": "In which country is the ancient pyramid located?",
+      "mediaURL": "/data/resources/game/landmarks/chichen-itza-mayan-ruins-yucatan-mexico.jpg",
+      "options": [
+        "Guatemala",
+        "Mexico",
+        "Peru",
+        "Belize"
+      ],
+      "correctAnswer": 1,
+      "fact": "Chichén Itzá is a Maya archaeological site on Mexico's Yucatán Peninsula."
+    },
+    {
+      "prompt": "Which city is home to this reflective sculpture shown in this image?",
+      "mediaURL": "/data/resources/game/landmarks/cloud-gate.jpg",
+      "options": [
+        "Chicago",
+        "Seattle",
+        "Berlin",
+        "Boston"
+      ],
+      "correctAnswer": 0,
+      "fact": "Cloud Gate, popularly known as 'The Bean,' stands in Millennium Park in Chicago."
+    },
+    {
+      "prompt": "In which country can you visit the prehistoric stone circle?",
+      "mediaURL": "/data/resources/game/landmarks/Stonehenge2007_07_30.jpg",
+      "options": [
+        "Ireland",
+        "France",
+        "United Kingdom",
+        "Denmark"
+      ],
+      "correctAnswer": 2,
+      "fact": "Stonehenge is a prehistoric monument on Salisbury Plain in England, part of the United Kingdom."
+    },
+    {
+      "prompt": "Which city is pictured beneath the Christ the Redeemer statue?",
+      "mediaURL": "/data/resources/game/landmarks/southamerica_landmarks_brazil_rio.jpg",
+      "options": [
+        "Lima",
+        "Rio de Janeiro",
+        "Santiago",
+        "Buenos Aires"
+      ],
+      "correctAnswer": 1,
+      "fact": "Christ the Redeemer overlooks Rio de Janeiro from the summit of Mount Corcovado."
+    },
+    {
+      "prompt": "In which city is the ancient Colosseum shown in this image?",
+      "mediaURL": "/data/resources/game/landmarks/Depositphotos_55951727_XL-2048x1360.jpg",
+      "options": [
+        "Athens",
+        "Istanbul",
+        "Rome",
+        "Naples"
+      ],
+      "correctAnswer": 2,
+      "fact": "The Colosseum is an ancient amphitheater in the center of Rome, Italy."
+    },
+    {
+      "prompt": "Which city is home to this bridge?",
+      "mediaURL": "/data/resources/game/landmarks/brooklyn-bridge.jpg",
+      "options": [
+        "New York City",
+        "Philadelphia",
+        "Chicago",
+        "Washington, D.C."
+      ],
+      "correctAnswer": 0,
+      "fact": "The Brooklyn Bridge connects Manhattan and Brooklyn across the East River in New York City."
+    },
+    {
+      "prompt": "In which country are the Moai statues shown in this image located?",
+      "mediaURL": "/data/resources/game/landmarks/chile-moai.jpg",
+      "options": [
+        "Chile",
+        "Ecuador",
+        "New Zealand",
+        "Fiji"
+      ],
+      "correctAnswer": 0,
+      "fact": "The Moai statues stand on Rapa Nui, also known as Easter Island, which is part of Chile."
+    },
+    {
+      "prompt": "Which city is home to the Sagrada Família shown in this image?",
+      "mediaURL": "/data/resources/game/landmarks/famous-buildings-in-spain_famous-gaudi-buildings-in-barcelona.jpeg",
+      "options": [
+        "Barcelona",
+        "Madrid",
+        "Seville",
+        "Valencia"
+      ],
+      "correctAnswer": 0,
+      "fact": "The Sagrada Família is Antoni Gaudí's famous unfinished basilica in Barcelona, Spain."
+    },
+    {
+      "prompt": "Which city is home to the Half House shown in this image?",
+      "mediaURL": "/data/resources/game/landmarks/half-of-this-1890s-toronto-row-house-is-still-standing-v0-h0mcu1jh55lh1.webp",
+      "options": [
+        "Toronto",
+        "London",
+        "New York City",
+        "Boston"
+      ],
+      "correctAnswer": 0,
+      "fact": "Toronto's Half House is the surviving portion of an 1890s row house in the city's downtown area."
+    }
+  ]
+}

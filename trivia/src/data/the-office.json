@@ -1,0 +1,16 @@
+{
+  "id": "the-office",
+  "displayName": "The Office",
+  "eyebrow": "That's what she said",
+  "description": "A round of Dundies, pranks, romances, and very questionable decisions from the Scranton branch.",
+  "mainImage": "/data/resources/banners/the-office-main.jpg",
+  "pageImage": "/data/resources/banners/the-office-page.jpg",
+  "theme": { "primary": "#2d6a6a", "secondary": "#e2f0ee", "accent": "#e6a23c", "ink": "#1f3b3b" },
+  "questions": [
+    { "prompt": "What company do the employees of the Scranton branch work for?", "options": ["Dunder Mifflin", "Vance Refrigeration", "Wernham Hogg", "Sabre Systems"], "correctAnswer": 0 },
+    { "prompt": "What is the name of Dwight's farm?", "options": ["Schrute Farms", "Beets Motel", "Dwight Acres", "The Hay Place"], "correctAnswer": 0 },
+    { "prompt": "Who starts the fire while making a cheese pita?", "options": ["Michael", "Ryan", "Kelly", "Kevin"], "correctAnswer": 1 },
+    { "prompt": "What does Jim put in Dwight's desk drawer?", "options": ["A stapler", "A phone", "His keys", "A fax machine"], "correctAnswer": 0 },
+    { "prompt": "What is the name of the office's annual awards ceremony?", "options": ["The Dundies", "The Scranties", "The Mifflins", "The Branchies"], "correctAnswer": 0 }
+  ]
+}

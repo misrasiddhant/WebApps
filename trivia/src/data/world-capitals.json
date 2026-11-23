@@ -1,0 +1,116 @@
+{
+  "id": "world-capitals",
+  "displayName": "World Capitals",
+  "eyebrow": "Around the world",
+  "description": "Can you match each country with its capital city?",
+  "mainImage": "https://eos.org/wp-content/uploads/2019/12/earth-at-night-from-space.jpg",
+  "pageImage": "https://eos.org/wp-content/uploads/2019/12/earth-at-night-from-space.jpg",
+  "theme": {
+    "primary": "#8a8f98",
+    "secondary": "#eef0f3",
+    "accent": "#c0562b",
+    "ink": "#2b2f36"
+  },
+  "questions": [
+    {
+      "prompt": "What is the capital of Sweden?",
+      "options": [
+        "Valetta",
+        "Niamey",
+        "Stockholm",
+        "San Marino"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "prompt": "What is the capital of Luxembourg?",
+      "options": [
+        "Ottawa",
+        "Luanda",
+        "Sofia",
+        "Luxembourg"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "prompt": "What is the capital of Trinidad and Tobago?",
+      "options": [
+        "Port of Spain",
+        "Managua",
+        "Khartoum",
+        "Bratislava"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "prompt": "What is the capital of Serbia?",
+      "options": [
+        "Abu Dhabi",
+        "Belgrade",
+        "Accra",
+        "Djibouti"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "prompt": "What is the capital of Kazakhstan?",
+      "options": [
+        "Maputo",
+        "Nursultan",
+        "Baku",
+        "Beirut"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "prompt": "What is the capital of Argentina?",
+      "options": [
+        "Monrovia",
+        "Budapest",
+        "Buenos Aires",
+        "Maseru"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "prompt": "What is the capital of Qatar?",
+      "options": [
+        "Doha",
+        "Baghdad",
+        "Montevideo",
+        "Dubai"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "prompt": "What is the capital of New Zealand?",
+      "options": [
+        "Saint John's",
+        "Wellington",
+        "Port Moresby",
+        "Moroni"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "prompt": "What is the capital of Norway?",
+      "options": [
+        "Belgrade",
+        "Oslo",
+        "Helsinki",
+        "Hamburg"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "prompt": "What is the capital of Austria?",
+      "options": [
+        "Salzburg",
+        "Budapest",
+        "Vienna",
+        "Prague"
+      ],
+      "correctAnswer": 2
+    }
+  ]
+}

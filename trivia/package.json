@@ -1,0 +1,28 @@
+{
+  "name": "trivia",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node index.js",
+    "test": "echo \"No tests configured\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "A category-driven trivia game",
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "express": "latest",
+    "vite": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "qrcode.react": "latest",
+    "lucide-react": "latest",
+    "socket.io": "latest",
+    "socket.io-client": "latest"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,127 @@
+{
+  "id": "5th-grader-trivia",
+  "displayName": "5th Grader Trivia",
+  "eyebrow": "Are you smarter than 5th grader?",
+  "description": "Quick general-knowledge questions from science, history, geography and more.",
+  "mainImage": "/data/resources/banners/5th-grader-main.jpg",
+  "pageImage": "/data/resources/banners/5th-grader-page.jpg",
+  "theme": {
+    "primary": "#3f8f5a",
+    "secondary": "#e8f5ec",
+    "accent": "#e0a526",
+    "ink": "#1f3326"
+  },
+  "questions": [
+    {
+      "prompt": "What is the numeric value of the Roman numeral L?",
+      "options": [
+        "50",
+        "100",
+        "500",
+        "10"
+      ],
+      "correctAnswer": 0,
+      "fact": "No wonder turning 50 feels like taking a massive L!"
+    },
+    {
+      "prompt": "On the periodic table, which element is represented by the letter P?",
+      "options": [
+        "Potassium",
+        "Platinum",
+        "Phosphorus",
+        "Polonium"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "prompt": "How many rings are there in Olympics Logo?",
+      "options": [
+        "1 More than Audi",
+        "2 More than Audi",
+        "1 Less than Audi",
+        "Same as Audi"
+      ],
+      "correctAnswer": 0,
+      "fact": "The Olympic logo has 5 rings, representing the five continents of the world. And Audi has 4 rings in its logo."
+    },
+    {
+      "prompt": "Which of these birds can fly?",
+      "options": [
+        "Penguin",
+        "Chicken",
+        "Ostrich",
+        "Eagle"
+      ],
+      "correctAnswer": 3,
+      "fact": "Among the listed birds, only the eagle can fly. Penguins, chickens, and ostriches are flightless birds."
+    },
+    {
+      "prompt": "Where is Leaning Tower of Pisa located?",
+      "options": [
+        "Berlin",
+        "Lisbon",
+        "Rome",
+        "Lyon"
+      ],
+      "correctAnswer": 2,
+      "fact": "The Leaning Tower of Pisa is located in Pisa, Italy."
+    },
+    {
+      "prompt": "What is the largest ocean on Earth?",
+      "options": [
+        "The Atlantic Ocean",
+        "Indian Ocean",
+        "Pacific Ocean",
+        "Arctic Ocean"
+      ],
+      "correctAnswer": 2,
+      "fact": "The Pacific Ocean is the largest ocean on Earth."
+    },
+    {
+      "prompt": "Which of these elements is NOT one of the 4 elements?",
+      "options": [
+        "Earth",
+        "Air",
+        "Sea",
+        "Fire"
+      ],
+      "correctAnswer": 2,
+      "fact": "The classical four elements are Earth, Air, Fire, and Water. 'Sea' is not one of them."
+    },
+    {
+      "prompt": "How many colors are there in a rainbow?",
+      "options": [
+        "6",
+        "7",
+        "8",
+        "Rainbows do not exist"
+      ],
+      "correctAnswer": 1,
+      "fact": "A rainbow has 7 colors: red, orange, yellow, green, blue, indigo, and violet."
+    },
+    {
+      "prompt": "Which of these takes longer to happen in real time?",
+      "options": [
+        "The Earth making one complete trip around the Sun",
+        "The Moon going through all of its phases (New Moon to New Moon)",
+        "Pluto finishing a single orbit around the Sun",
+        "Earth spinning around on its axis one time"
+      ],
+      "correctAnswer": 2,
+      "fact": "A single \"Pluto year\" takes **248 Earth years**, making it vastly longer than a standard Earth year, moon cycle, or single day!"
+    },
+    {
+      "prompt": "If you weigh 100 kgs on Earth, how much would you weigh right at the exact center of the Earth?",
+      "options": [
+        "0 kgs",
+        "200 kgs",
+        "50 kgs",
+        "100 kgs"
+      ],
+      "correctAnswer": 0,
+      "fact": "At the exact center of the Earth, gravity cancels out, making you effectively weightless."
+    },
+    { "prompt": "In tennis, what is the term for a score of zero?", "options": ["Nil", "Love", "Blank", "Duck"], "correctAnswer": 1 }
+
+  ]
+}

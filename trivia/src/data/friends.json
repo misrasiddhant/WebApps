@@ -1,0 +1,125 @@
+{
+  "id": "friends",
+  "displayName": "Friends",
+  "eyebrow": "Could this BE any more fun?",
+  "description": "Revisit Central Perk, apartment swaps, iconic romances, and six friends who never stopped showing up.",
+  "mainImage": "/data/resources/banners/friends-main.jpg",
+  "pageImage": "/data/resources/banners/friends-page.jpg",
+  "theme": {
+    "primary": "#b34d58",
+    "secondary": "#f9e5e3",
+    "accent": "#5b82a5",
+    "ink": "#3c252d"
+  },
+  "questions": [
+    {
+      "prompt": "What is the name of the coffee shop the friends visit?",
+      "options": [
+        "Central Perk",
+        "Tom's Restaurant",
+        "Central Park",
+        "The Coffee House"
+      ],
+      "correctAnswer": 0,
+      "fact": "Central Perk was less than 100 steps away from the friends' apartment"
+    },
+    {
+      "prompt": "What is Ross's profession?",
+      "options": [
+        "Lawyer",
+        "Paleontologist",
+        "Teacher",
+        "Museum curator"
+      ],
+      "correctAnswer": 1,
+      "fact": "Ross is a paleontologist, specializing in the study of dinosaurs."
+    },
+    {
+      "prompt": "What is Joey's famous catchphrase?",
+      "options": [
+        "How you doin'?",
+        "Joey doesn't share food",
+        "We were on a break!",
+        "Pivot!"
+      ],
+      "correctAnswer": 0,
+      "fact": "Joey's catchphrase 'How you doin'?' became one of the most iconic lines from the show."
+    },
+    {
+      "prompt": "In the famous trivia game episode, what items were at stake on the guys' side of the bet?",
+      "options": [
+        "The recliners",
+        "The appartment",
+        "The chick and the duck",
+        "Their foosball table"
+      ],
+      "correctAnswer": 2,
+      "fact": "In the trivia game episode, the guys bet the chick and the duck against the girls' apartment."
+    },
+    {
+      "prompt": "What was Chandler's job?",
+      "options": [
+        "Data processing and statistical analysis",
+        "Transponsder",
+        "IT consultant",
+        "Bank manager"
+      ],
+      "correctAnswer": 0,
+      "fact": "Chandler's job involved data processing and statistical analysis, which was often a running joke on the show."
+    },
+    {
+      "prompt": "In the episode \"The One with Ross's Wedding,\" who does Ross say the wrong name to at the altar?",
+      "options": [
+        "Emily",
+        "Rachel",
+        "Susan",
+        "Carol"
+      ],
+      "correctAnswer": 0,
+      "fact": "Ross's vows were a total trainwreck—proving that saying 'I take thee, Rachel' to your bride Emily is a great way to kick-start a quickie divorce!"
+    },
+    {
+      "prompt": "What stuffed animal does Joey own?",
+      "options": [
+        "A penguin",
+        "A teddy bear",
+        "A goose",
+        "A monkey"
+      ],
+      "correctAnswer": 0,
+      "fact": "Joey's penguin Hugsy is so important to him that he once had to rescue him from Chandler's niece!"
+    },
+    {
+      "prompt": "What is Ross's monkey's name?",
+      "mediaURL": "/data/resources/game/friends/marcel.png",
+      "options": [
+        "Marcel",
+        "Barnaby",
+        "Curious George",
+        "Coco"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "prompt": "How does Dr. Drake Ramoray die in Days of Our Lives?",
+      "options": [
+        "He falls down an elevator shaft",
+        "He is eaten by a wild bear",
+        "Hit by a car",
+        "Surgery gone wrong."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "prompt": "How many distinct towel categories does Monica famously maintain in her apartment?",
+      "options": [
+        "11",
+        "5",
+        "8",
+        "14"
+      ],
+      "correctAnswer": 0,
+      "fact": "Maintaining 11 separate towel categories—including `everyday use`, 'fancy' and 'fancy-guest'—proves that Monica's linen closet requires its own security clearance!"
+    }
+  ]
+}
