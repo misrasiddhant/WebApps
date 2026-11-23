@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f3efe8">
+  <title>Pair & Print</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#">PAIR<span>/</span>PRINT</a>
+      <div class="topbar-meta"><span class="status-dot"></span> Local workspace</div>
+    </header>
+
+    <section class="intro">
+      <div>
+        <p class="eyebrow">4 × 6 photo maker</p>
+        <h1>Two memories.<br><em>One print.</em></h1>
+      </div>
+      <p class="intro-copy">Choose your photos, pair them automatically, and make print-ready 4 × 6 JPEGs for your photo app or printer.</p>
+    </section>
+
+    <section class="workspace" aria-label="Photo pair editor">
+      <aside class="control-panel">
+        <div class="panel-heading">
+          <div>
+            <p class="section-label">01 / source</p>
+            <h2>Pick your photos</h2>
+          </div>
+          <div class="source-actions"><span class="count" id="photoCount">0 photos</span><button class="reset-button" id="resetButton" type="button" disabled>Reset</button></div>
+        </div>
+
+        <label class="drop-zone" id="dropZone" for="fileInput">
+          <span class="upload-icon">+</span>
+          <span class="drop-title">Add photos</span>
+          <span class="drop-hint">Drop files here or browse your library</span>
+          <input id="fileInput" type="file" accept="image/*,.heic,.heif" multiple>
+        </label>
+
+        <div class="selection-list" id="selectionList" aria-live="polite">
+          <div class="empty-state">Your selected photos<br>will appear here in pairs.</div>
+        </div>
+
+        <p class="import-status" id="importStatus" role="status" aria-live="polite"></p>
+
+        <div class="tip"><span>↗</span><p>For the sharpest print, use original photos. Your images never leave this browser.</p></div>
+      </aside>
+
+      <section class="preview-panel">
+        <div class="print-preview-wrap">
+          <div class="print-header"><div><p class="section-label">02 / print preview</p><h2>Ready to print</h2></div><div class="print-meta"><span class="dimension-badge">2400 × 1600 px</span><span class="print-format">Drag to reframe · 4 × 6 in</span></div></div>
+          <div class="print-stage" id="printStage">
+            <div class="preview-grid" id="previewGrid"></div>
+            <div class="canvas-placeholder" id="canvasPlaceholder">Your print previews<br>will appear here.</div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <footer class="action-bar">
+      <div class="export-note"><span class="ready-icon" id="readyIcon">×</span><span id="readyText">Choose two photos to enable export</span></div>
+      <button class="export-button" id="exportButton" disabled><span>Save print-ready JPEGs</span><span class="button-arrow">↗</span></button>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
