@@ -1,0 +1,126 @@
+{
+  "id": "toronto",
+  "displayName": "Toronto",
+  "eyebrow": "The six",
+  "description": "Explore the vibrant city of Toronto, from its iconic skyline to diverse neighborhoods and cultural landmarks.",
+  "mainImage": "/data/resources/banners/toronto-main.jpg",
+  "pageImage": "/data/resources/banners/toronto-page.jpg",
+  "theme": {
+    "primary": "#274490",
+    "secondary": "#f0f4fa",
+    "accent": "#ff3100",
+    "ink": "#1b253b"
+  },
+  "questions": [
+    {
+      "prompt": "What is the tallest habitable building in Toronto?",
+      "options": [
+        "CN Tower",
+        "First Canadian Place",
+        "One Bloor East",
+        "SkyTower at Pinnacle One Yonge"
+      ],
+      "correctAnswer": 3,
+      "fact": "The CN Tower was the tallest free-standing structure in the world until 2007. The tallest habitable building in Toronto is the SkyTower at Pinnacle One Yonge."
+    },
+    {
+      "prompt": "What is the historic market in downtown Toronto called?",
+      "options": [
+        "St. Lawrence Market",
+        "Kensington Market",
+        "Distillery District",
+        "Evergreen Brick Works"
+      ],
+      "correctAnswer": 0,
+      "fact": "St. Lawrence Market is a historic market in downtown Toronto, known for its fresh produce, specialty foods, and vibrant atmosphere."
+    },
+    {
+      "prompt": "Which Toronto street is famous for its shopping and entertainment?",
+      "options": [
+        "Yonge Street",
+        "Queen Street",
+        "Bloor Street",
+        "King Street"
+      ],
+      "correctAnswer": 0,
+      "fact": "Yonge Street is famous for its shopping and entertainment, stretching from the waterfront to the northern suburbs of Toronto."
+    },
+    {
+      "prompt": "This is the iconic TORONTO sign in Nathan Phillips Square. How long was it actually intended to stay in the square?",
+      "mediaURL": "/data/resources/game/toronto/toronto.png",
+      "options": [
+        "1 weekend",
+        "4 weeks",
+        "10 years",
+        "Permanently"
+      ],
+      "correctAnswer": 1,
+      "fact": "The iconic TORONTO sign in Nathan Phillips Square was originally intended to stay for just 4 weeks during Pan American and Parapan American Games, but it became a permanent fixture due to its popularity."
+    },
+    {
+      "prompt": "What legendary Toronto street food item was invented in the city back in 1940 and is traditionally served at the St. Lawrence Market?",
+      "options": [
+        "BeaverTails",
+        "Toronto Hot Dog",
+        "Peameal Bacon Sandwich",
+        "Poutine"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "prompt": "How many kilometers does Toronto's PATH underground shopping network span?",
+      "options": [
+        "30 km",
+        "10 km",
+        "5 km",
+        "15 km"
+      ],
+      "correctAnswer": 0,
+      "fact": "Toronto's PATH is the largest underground shopping complex in the world, spanning over 30 kilometers of pedestrian walkways connecting various buildings and transit stations."
+    },
+    {
+      "prompt": "Name this building",
+      "mediaURL": "/data/resources/game/toronto/rom.jpg",
+      "options": [
+        "Aga Khan Museum",
+        "Art Gallery of Ontario",
+        "Bata Shoe Museum",
+        "Royal Ontario Museum"
+      ],
+      "correctAnswer": 3,
+      "fact": "The Royal Ontario Museum (ROM) is one of the largest museums in North America, featuring extensive collections of art, world culture, and natural history. It's free on the third Monday of each month!!! We should plan it someday."
+    },
+    {
+      "prompt": "Starting at King Station and traveling exactly 5 stops northbound along the Yonge branch of Line 1 (Yonge-University), which station do you arrive at?",
+      "options": [
+        "Bloor-Yonge",
+        "St. Clair",
+        "College",
+        "Rosedale"
+      ],
+      "correctAnswer": 0,
+      "fact": "Starting at King Station and traveling 5 stops northbound along the Yonge branch of Line 1, you arrive at Bloor-Yonge Station via Queen, TMU, College, and Wellesley."
+    },
+    {
+      "prompt": "In Toronto FC's 2–1 home victory over D.C. United on October 28, 2026, how many total corners did D.C. United win?",
+      "options": [
+        "3",
+        "5",
+        "7",
+        "10"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "prompt": "Whose concert has shattered records in Toronto by scheduling the most consecutive shows planned by any band on a single tour at the venue?",
+      "options": [
+        "Backstreet Boys",
+        "Taylor Swift",
+        "Ed Sheeran",
+        "Coldplay"
+      ],
+      "correctAnswer": 0,
+      "fact": "The Backstreet Boys set the record for 12 consecutive shows planned by any band on a single tour at the venue in Toronto."
+    }
+  ]
+}

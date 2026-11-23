@@ -1,2 +1,9 @@
-/.idea/
+# OS and editor files
+.idea/
 .DS_Store
+.vscode/
+
+# Local environment files
+.env
+.env.*
+!.env.example

@@ -1,0 +1,126 @@
+{
+  "id": "flags",
+  "displayName": "Flags",
+  "eyebrow": "Wave your colors",
+  "description": "Name the country behind each flag.",
+  "mainImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3en721B5bh62tE3Gk9wBFuL8UkHBLAzb8YpNrypGcLw&s=10",
+  "pageImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3en721B5bh62tE3Gk9wBFuL8UkHBLAzb8YpNrypGcLw&s=10",
+  "theme": {
+    "primary": "#d2452f",
+    "secondary": "#fdeee9",
+    "accent": "#1f5fa8",
+    "ink": "#32211d"
+  },
+  "questions": [
+    {
+      "prompt": "Which country's flag is this?",
+      "mediaURL": "/data/resources/game/flags/Picture1.png",
+      "options": [
+        "Colombia",
+        "Ecuador",
+        "Venezuela",
+        "Lithuania"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "prompt": "Which country's flag is this?",
+      "mediaURL": "/data/resources/game/flags/Picture2.png",
+      "options": [
+        "Ghana",
+        "Ethiopia",
+        "Senegal",
+        "Guinea"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "prompt": "Which country's flag is this?",
+      "mediaURL": "/data/resources/game/flags/Picture3.png",
+      "options": [
+        "Italy",
+        "Mexico",
+        "Hungary",
+        "Bulgaria"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "prompt": "Which country's flag is this?",
+      "mediaURL": "/data/resources/game/flags/Picture4.png",
+      "options": [
+        "Ireland",
+        "Ivory Coast",
+        "Italy",
+        "India"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "prompt": "Which country's flag is this?",
+      "mediaURL": "/data/resources/game/flags/Picture5.png",
+      "options": [
+        "Vatican City",
+        "Portugal",
+        "Spain",
+        "Andorra"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "prompt": "Which country's flag is this?",
+      "mediaURL": "/data/resources/game/flags/Picture6.png",
+      "options": [
+        "Tunisia",
+        "Turkey",
+        "Pakistan",
+        "Albania"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "prompt": "Which country's flag is this?",
+      "mediaURL": "/data/resources/game/flags/Picture7.png",
+      "options": [
+        "Afghanistan",
+        "Iran",
+        "Iraq",
+        "Pakistan"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "prompt": "Which country's flag is this?",
+      "mediaURL": "/data/resources/game/flags/Picture8.png",
+      "options": [
+        "Tanzania",
+        "Kenya",
+        "Uganda",
+        "Malawi"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "prompt": "Which country's flag is this?",
+      "mediaURL": "/data/resources/game/flags/Picture9.png",
+      "options": [
+        "New Zealand",
+        "Australia",
+        "Fiji",
+        "Tuvalu"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "prompt": "Which country's flag is this?",
+      "mediaURL": "/data/resources/game/flags/Picture10.jpg",
+      "options": [
+        "Liberia",
+        "Texas",
+        "Chile",
+        "Cuba"
+      ],
+      "correctAnswer": 2
+    }
+  ]
+}

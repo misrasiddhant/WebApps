@@ -1,0 +1,166 @@
+{
+  "id": "harry-potter",
+  "displayName": "Harry Potter",
+  "eyebrow": "The wizarding world",
+  "description": "Test your knowledge of Hogwarts, magical creatures, spells, and the people who made the story unforgettable.",
+  "mainImage": "/data/resources/banners/harry-potter-main.jpg",
+  "pageImage": "/data/resources/banners/harry-potter-page.jpg",
+  "theme": {
+    "primary": "#7b1e2b",
+    "secondary": "#f6ecd9",
+    "accent": "#d4a017",
+    "ink": "#2a1a14"
+  },
+  "questions": [
+    {
+      "prompt": "What is the name of Harry Potter's owl?",
+      "options": [
+        "Hedwig",
+        "Errol",
+        "Crookshanks",
+        "Fawkes"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "prompt": "Which platform does the Hogwarts Express leave from?",
+      "options": [
+        "Platform 7 1/2",
+        "Platform 9 3/4",
+        "Platform 10 1/4",
+        "Platform 12"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "prompt": "What position does Harry play on the Gryffindor Quidditch team?",
+      "options": [
+        "Keeper",
+        "Beater",
+        "Chaser",
+        "Seeker"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "prompt": "What is the name of the three-headed dog guarding the trapdoor?",
+      "options": [
+        "Fang",
+        "Fluffy",
+        "Norbert",
+        "Aragog"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "prompt": "Which spell is used to disarm an opponent?",
+      "options": [
+        "Lumos",
+        "Expecto Patronum",
+        "Expelliarmus",
+        "Alohomora"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "prompt": "Who is the ghost of Gryffindor House?",
+      "options": [
+        "The Bloody Baron",
+        "The Grey Lady",
+        "The Fat Friar",
+        "Nearly Headless Nick"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "prompt": "How many points is the Golden Snitch worth in a game of Quidditch?",
+      "options": [
+        "50",
+        "100",
+        "150",
+        "200"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "prompt": "Who was the first person to approach Harry and Ron in their train compartment on their first trip to Hogwarts?",
+      "options": [
+        "Neville Longbottom",
+        "Hermione Granger",
+        "Draco Malfoy",
+        "A prefect"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "prompt": "What is the Hogwarts motto, \"Draco dormiens nunquam titillandus,\" translated into English?",
+      "options": [
+        "Let the dragon sleep",
+        "Never tickle a sleeping dragon",
+        "Wisdom is the greatest treasure",
+        "Brave hearts always win"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "prompt": "What is Harry's owl's name?",
+      "options": [
+        "Pigwidgeon",
+        "Hedwig",
+        "Errol",
+        "Crookshanks"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "prompt": "Who is Draco’s father?",
+      "options": [
+        "Severus",
+        "James",
+        "Lucius",
+        "Abraxas"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "prompt": "Which spell is used to disarm?",
+      "options": [
+        "Expelliarmus",
+        "Accio",
+        "Wingardium Leviosa",
+        "Alohomora"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "prompt": "Which of the four is not an Unforgivable Curse?",
+      "options": [
+        "Avra Kedavra",
+        "Crucio",
+        "Incendio",
+        "Imperio"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "prompt": "Which of these Hogwarts professors teaches Transfiguration?",
+      "options": [
+        "Snape",
+        "Sprout",
+        "McGonagal",
+        "Quirrell"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "prompt": "What is the name of Harry Potter’s 5th book?",
+      "options": [
+        "Deathly Hallows",
+        "Order of the Phoenix",
+        "Goblet of Fire",
+        "Half Blood Prince"
+      ],
+      "correctAnswer": 1
+    }
+  ]
+}

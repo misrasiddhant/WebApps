@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title desc">
+  <title id="title">A bowl of pasta</title>
+  <desc id="desc">An illustrated bowl of spaghetti with tomato sauce and basil.</desc>
+  <rect width="800" height="500" fill="#f8dfc4"/>
+  <circle cx="650" cy="110" r="95" fill="#f1b24a" opacity=".45"/>
+  <ellipse cx="400" cy="370" rx="265" ry="55" fill="#bf4937"/>
+  <path d="M160 270 Q400 430 640 270 L610 385 Q400 465 190 385 Z" fill="#fff7ed" stroke="#3d241f" stroke-width="8"/>
+  <ellipse cx="400" cy="285" rx="230" ry="82" fill="#d95d3d" stroke="#3d241f" stroke-width="8"/>
+  <path d="M230 275 C290 220 300 350 360 270 S430 350 485 270 S550 340 590 275" fill="none" stroke="#f6d28d" stroke-width="18" stroke-linecap="round"/>
+  <path d="M260 270 C310 235 325 330 375 275 S450 340 510 270" fill="none" stroke="#f6d28d" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="330" cy="260" r="13" fill="#6d9e55"/><circle cx="520" cy="292" r="13" fill="#6d9e55"/><circle cx="430" cy="250" r="11" fill="#6d9e55"/>
+  <text x="400" y="90" text-anchor="middle" fill="#3d241f" font-family="sans-serif" font-size="32" font-weight="700">PICTURE CLUE</text>
+</svg>

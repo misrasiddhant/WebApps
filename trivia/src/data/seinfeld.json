@@ -1,0 +1,21 @@
+{
+  "id": "seinfeld",
+  "displayName": "Seinfeld",
+  "eyebrow": "A show about nothing",
+  "description": "How well do you remember Jerry, George, Elaine, Kramer, and the wonderfully petty world around them?",
+  "mainImage": "/data/resources/banners/seinfeld-page.jpeg",
+  "pageImage": "/data/resources/banners/seinfeld-page.jpeg",
+  "theme": { "primary": "#b8792b", "secondary": "#fbefd9", "accent": "#3e7893", "ink": "#3d2b1c" },
+  "questions": [
+    { "prompt": "What is Kramer's first name?", "options": ["Newman", "Lloyd", "Cosmo", "Morty"], "correctAnswer": 2 },
+    { "prompt": "What is George Costanza's father's name?", "options": ["George Sr.", "Estelle", "Lloyd", "Frank"], "correctAnswer": 3 },
+    { "prompt": "What does Elaine dance in an infamous episode?", "options": ["The Pretzel", "The Little Kicks", "The Side Step", "The Elaine"], "correctAnswer": 1 },
+    { "prompt": "What kind of soup does the Soup Nazi serve?", "options": ["Many varieties", "No soup at all", "Only chicken", "Only tomato"], "correctAnswer": 0 },
+    { "prompt": "What is Jerry's profession?", "options": ["Actor", "Journalist", "Writer", "Comedian"], "correctAnswer": 3 },
+    { "prompt": "What is the fictional name of the diner where Jerry and his friends often meet?", "options": ["The Daily Grind", "Tom's Restaurant (the real-life exterior)", "Monk's Café", "Reggie's Diner"], "correctAnswer": 2 },
+    { "prompt": "What holiday does George's father create?", "options": ["Costanza Day", "Festivus", "Franksgiving", "The Airing of Grievances"], "correctAnswer": 1 },
+    { "prompt": "What does Newman deliver for the U.S. Postal Service?", "options": ["Mail", "Packages", "Newspapers", "Groceries"], "correctAnswer": 0 },
+    { "prompt": "What is the name of Elaine's employer for much of the series?", "options": ["Pendant Publishing", "Vandelay Industries", "Kruger Industrial Smoothing", "J. Peterman"], "correctAnswer": 3 },
+    { "prompt": "What is Jerry's apartment number?", "options": ["3B", "411", "5A", "7C"], "correctAnswer": 2 }
+  ]
+}
